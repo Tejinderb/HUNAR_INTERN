@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">NETFLIX</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#series">Series</a>
+        <a href="#movies">Movies</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Stranger Things</h1>
+        <p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.</p>
+        <button class="play-btn" onclick="playVideo('stranger-things')">Play</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="category">
+        <h2>Trending Now</h2>
+        <div class="movie-row" id="trending"></div>
+      </section>
+
+      <section class="category">
+        <h2>Popular Series</h2>
+        <div class="movie-row" id="popular"></div>
+      </section>
+    </main>
+
+    <div class="video-player" id="videoPlayer">
+      <div class="video-container">
+        <button class="close-btn" onclick="closeVideo()">×</button>
+        <div class="video-content">
+          <h2>Now Playing</h2>
+          <div class="fake-video">
+            <div class="loading-animation"></div>
+            <p>Simulated Video Playback</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
